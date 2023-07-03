@@ -88,7 +88,7 @@ function initApp() {
             <div class="title">${value.name}</div>
             <div class="info">${value.info}</div>
             <div class="price">${value.price.toLocaleString()}</div>
-            <button onclick="addToCard(${key})">Add To Card</button>`;
+            <button onclick="addToCard(${key})">sotib olish</button>`;
     list.appendChild(newDiv);
   });
 }
