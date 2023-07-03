@@ -18,11 +18,13 @@ let products = [
     id: 1,
     name: "Tarvuz",
     image: "watermelon.jpg",
-    price: `${`1 kg 3 999 so'm dan`}`,
+    info: "1 kg 3 999 so'm dan",
+    price: 3999
   },
   {
     id: 2,
-    name: "Pepsi Cola Cola 1.5 0.5 6 000 so'm",
+    name: "Pepsi Cola Cola",
+    info: "Pepsi Cola Cola 1.5 0.5 6 000 so'm",
     image: "pepsi.jpg",
     price: 16999,
   },
@@ -30,43 +32,50 @@ let products = [
     id: 3,
     name: "flash",
     image: "flesh.jpg",
+    info: "kichasi 7 0000",
     price: 13999,
   },
   {
     id: 4,
     name: "Tovun",
     image: "Melon.jpg",
-    price: `${`1 kg 6 999`}`,
+    info: "1 kg 6 999",
+    price: 16999,
   },
   {
     id: 5,
     name: "Non",
     image: "non.webp",
+    info: "Patir 1 0000",
     price: 26000,
   },
   {
     id: 6,
     name: "Pizza",
     image: "Pizza.jpg",
+    info: "O'rtacha 110000 va kichina 90000",
     price: 120000,
   },
   {
     id: 7,
     name: "Tuz",
     image: "tuz.jpg",
+    info: "22000 kg so'm dan",
     price: 12000,
   },
   {
     id: 8,
     name: "Yog'",
     image: "yog.jpg",
-    price: `${`20000 1liter va 4000 liter`}`
+    info: "20000 1 liter liter 4000 so'm",
+    price: 20000
   },
   {
     id: 9,
-    name: "Gosht",
+    name: "Go'sht",
     image: "gosht.avif",
-    price: `${`14000 1 kg qo'y mol 12000`}`
+    info: "14000 1 kg qo'y mol",
+    price:  12000
   },
 ];
 let listCards = [];
@@ -77,6 +86,7 @@ function initApp() {
     newDiv.innerHTML = `
             <img src="image/${value.image}">
             <div class="title">${value.name}</div>
+            <div class="info">${value.info}</div>
             <div class="price">${value.price.toLocaleString()}</div>
             <button onclick="addToCard(${key})">Add To Card</button>`;
     list.appendChild(newDiv);
